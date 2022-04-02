@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
+import {SafeAreaView, ScrollView, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import Worklets from './src/Worklets';
 
@@ -28,11 +28,11 @@ import Worklets from './src/Worklets';
 const App = () => {
   console.log('test 123');
   return (
-    <GestureHandlerRootView>
-      <SafeAreaView>
-        <ScrollView>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <SafeAreaView style={{flex: 1}}>
+        <View style={{flex: 1}}>
           <Worklets />
-        </ScrollView>
+        </View>
       </SafeAreaView>
     </GestureHandlerRootView>
   );
