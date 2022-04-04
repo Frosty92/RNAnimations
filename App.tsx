@@ -9,9 +9,9 @@
  */
 
 import React from 'react';
-import {SafeAreaView, ScrollView, View} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import Worklets from './src/Worklets';
+import PanGesture from './src/lessons/PanGesture';
 
 /**
  * When you install Reanimated and ReactNative Gesture Handler,
@@ -31,7 +31,7 @@ const App = () => {
     <GestureHandlerRootView style={{flex: 1}}>
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1}}>
-          <Worklets />
+          <PanGesture />
         </View>
       </SafeAreaView>
     </GestureHandlerRootView>
