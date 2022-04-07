@@ -12,6 +12,7 @@ import React from 'react';
 import {SafeAreaView, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import PanGesture from './src/lessons/PanGesture';
+import PanGestureTwo from './src/lessons/PanGestureTwo';
 
 /**
  * When you install Reanimated and ReactNative Gesture Handler,
