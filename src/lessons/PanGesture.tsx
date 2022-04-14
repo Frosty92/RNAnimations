@@ -1,15 +1,13 @@
 import * as React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Dimensions} from 'react-native';
 import {PanGestureHandler} from 'react-native-gesture-handler';
 import Animated, {
   useAnimatedGestureHandler,
   useAnimatedStyle,
   useSharedValue,
+  withDecay,
 } from 'react-native-reanimated';
 import {clamp} from 'react-native-redash';
-
-import {withDecay} from 'react-native-reanimated/src/reanimated2/animation';
-import {Dimensions} from 'react-native';
 
 const CARD_WIDTH = 250;
 const CARD_HEIGHT = 100;

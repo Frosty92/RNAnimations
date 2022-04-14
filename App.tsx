@@ -12,7 +12,7 @@ import React from 'react';
 import {SafeAreaView, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import PanGesture from './src/lessons/PanGesture';
-import PanGestureTwo from './src/lessons/PanGestureTwo';
+import Transitions from './src/lessons/Transitions';
 
 /**
  * When you install Reanimated and ReactNative Gesture Handler,
@@ -32,7 +32,7 @@ const App = () => {
     <GestureHandlerRootView style={{flex: 1}}>
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1}}>
-          <PanGesture />
+          <Transitions />
         </View>
       </SafeAreaView>
     </GestureHandlerRootView>
