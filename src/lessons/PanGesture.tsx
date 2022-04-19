@@ -7,7 +7,7 @@ import Animated, {
   useSharedValue,
   withDecay,
 } from 'react-native-reanimated';
-import {clamp} from 'react-native-redash';
+import {clamp, withBouncing} from 'react-native-redash';
 
 const CARD_WIDTH = 250;
 const CARD_HEIGHT = 100;
@@ -32,13 +32,15 @@ export default function PanGesture() {
       translateY.value = clamp(ctx.offsetY + evt.translationY, 0, boundY);
     },
     onEnd: evt => {
-      translateX.value = withDecay({
-        velocity: evt.velocityX,
-        clamp: [0, width - CARD_WIDTH],
-      });
+      translateX.value = withBouncing(
+        withDecay({
+          velocity: evt.velocityX,
+        }),
+        0,
+        boundX,
+      );
       translateY.value = withDecay({
         velocity: evt.velocityY,
-        clamp: [0, boundY],
       });
     },
   });

@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {StyleSheet, Text} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {
+  TouchableHighlight,
+  TouchableOpacity,
+} from 'react-native-gesture-handler';
 
 interface Props {
   onPress: () => void;

@@ -11,6 +11,7 @@
 import React from 'react';
 import {SafeAreaView, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import HigherOrder from './src/lessons/HigherOrder';
 import PanGesture from './src/lessons/PanGesture';
 import Transitions from './src/lessons/Transitions';
 
@@ -32,7 +33,7 @@ const App = () => {
     <GestureHandlerRootView style={{flex: 1}}>
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1}}>
-          <Transitions />
+          <HigherOrder />
         </View>
       </SafeAreaView>
     </GestureHandlerRootView>

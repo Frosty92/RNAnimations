@@ -26,7 +26,6 @@ console.log('origin is', width, origin);
 
 function Card({transition, index, color}: CardProps) {
   const animatedStyle = useAnimatedStyle(() => {
-    console.log('transition is', transition);
     const rotate = interpolate(
       transition.value,
       [0, 1],
